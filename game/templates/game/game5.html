@@ -1,0 +1,16 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 5
+</h1>
+
+    {% for item in items %}
+<p>
+    It's been a {{ item.adjective }} winter here in {{ item.place }}. For as long as we can remember, the sky has been
+    {{ item.color }} and the ground has been covered with {{ item.waterForm }}. We have all been surviving on a steady
+    diet of {{ item.foodOne }} and {{ item.foodTwo }}. Please pray for us here. Love, {{ item.name }}
+</p>
+    {% endfor %}
+{% endblock %}

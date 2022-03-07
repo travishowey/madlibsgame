@@ -1,0 +1,32 @@
+{% extends 'game/base.html' %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+{% block body %}
+<h1>Welcome to Travlibs. Would you like to play a game?</h1>
+
+    <a href="{% url 'game:create_item' %}" class="nav-item nav-link">Game One</a>
+    <a href="{% url 'game:create_item_two' %}" class="nav-item nav-link">Game Two</a>
+    <a href="{% url 'game:create_item_three' %}" class="nav-item nav-link">Game Three</a>
+    <a href="{% url 'game:create_item_four' %}" class="nav-item nav-link">Game Four</a>
+    <a href="{% url 'game:create_item_five' %}" class="nav-item nav-link">Game Five</a>
+    <a href="{% url 'game:create_item_six' %}" class="nav-item nav-link">Game Six</a>
+    <a href="{% url 'game:create_item_seven' %}" class="nav-item nav-link">Game Seven</a>
+    <a href="{% url 'game:create_item_eight' %}" class="nav-item nav-link">Game Eight</a>
+    <a href="{% url 'game:create_item_nine' %}" class="nav-item nav-link">Game Nine</a>
+    <a href="{% url 'game:create_item_ten' %}" class="nav-item nav-link">Game Ten</a>
+    <a href="{% url 'game:create_item_eleven' %}" class="nav-item nav-link">Game Eleven</a>
+    <a href="{% url 'game:create_item_twelve' %}" class="nav-item nav-link">Game Twelve</a>
+    <a href="{% url 'game:create_item_thirteen' %}" class="nav-item nav-link">Game Thirteen</a>
+    <a href="{% url 'game:create_item_fourteen' %}" class="nav-item nav-link">Game Fourteen</a>
+    <a href="{% url 'game:create_item_fifteen' %}" class="nav-item nav-link">Game Fifteen</a>
+{% endblock %}
+</body>
+</html>

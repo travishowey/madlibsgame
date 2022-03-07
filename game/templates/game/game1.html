@@ -1,0 +1,19 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 1
+</h1>
+
+    {% for item in items %}
+<p>
+    It was a {{ item.adjective }}, cold {{ item.month }} day. I woke up to the {{ item.adjectiveTwo }} smell
+    of {{ item.bird }} roasting in the {{ item.room }} downstairs. I {{ item.pastTenseVerb }} down the stairs
+    to see if I could help {{ item.verb }} the dinner. My mom said, "See if {{ item.relative }} needs a fresh
+    {{ item.noun }}." So I carried a tray of glasses, full of {{ item.liquid }} into the {{ item.verbWithIng }}
+    room. When I got there, I couldn't believe my {{ item.bodyPart }}! there were {{ item.pluralNoun }}
+    {{ item.verbWithIngTwo }} on the {{ item.nounTwo }}!
+</p>
+    {% endfor %}
+{% endblock %}

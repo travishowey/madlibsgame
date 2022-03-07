@@ -1,0 +1,19 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 12
+</h1>
+
+    {% for item in items %}
+<p>
+    Dogs and cats can be the best of friends, but also worst enemies! sometimes, dogs will {{ item.verb }} after cats,
+    just to make them {{ item.adjectiveWithLy }} angry! Other times, cats will {{ item.verbTwo }} on a dog's
+    {{ item.bodyPart }} just for fun. Cats and dogs can be nice, too. They cuddle, and sleep on {{ item.plants }}
+    together, or eat {{ item.food }} together. They'll even chase {{ item.noun }} down {{ item.streetName }} together!
+    But, alas, they are long-time foes, and often end up {{ item.verbWithIng }}, fighting hissing, growling and
+    {{ item.verbWithIngTwo }} at each other over {{ item.foodTwo }}
+</p>
+    {% endfor %}
+{% endblock %}

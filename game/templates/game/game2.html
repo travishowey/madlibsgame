@@ -1,0 +1,15 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 2
+</h1>
+
+    {% for item in items %}
+<p>
+    {{ item.personOne }} went to the beach with {{ item.personTwo }}. First they {{ item.verb }} in their {{ item.noun }}.
+    Then, they saw {{ item.nounTwo }} and {{ item.nounThree }}. Lastly, they built a sandcastle out of {{ item.nounFour }}
+</p>
+    {% endfor %}
+{% endblock %}

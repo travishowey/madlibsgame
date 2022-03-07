@@ -1,0 +1,18 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 6
+</h1>
+
+    {% for item in items %}
+<p>
+    So much {{ item.noun }} fell from the {{ item.place }} last night that we got to stay home from school! There are
+    {{ item.number }} inches of snow on the ground, so we went outside to make {{ item.nounTwo }} men and go
+    {{ item.verbWithIng }} down a big hill. First, our mom made us put on warm {{ item.clothing }} and
+    {{ item.clothingTwo }}. After we were done, we went home to have hot {{ item.beverage }} and {{ item.food }} to
+    warm up.
+</p>
+    {% endfor %}
+{% endblock %}

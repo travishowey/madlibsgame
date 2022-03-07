@@ -1,0 +1,17 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 4
+</h1>
+
+    {% for item in items %}
+<p>
+    Dear, {{ item.familyMember }}, Here I am at Camp {{ item.adjective }} Lake. I am having a {{ item.adjectiveTwo }}
+    time. So far I have gone {{ item.activity }} and {{ item.activityTwo }}. My favorite thing about camp is
+    {{ item.pluralNoun }}. They are so {{  item.adjectiveThree }}! I miss {{ item.noun }} though. See you soon! Love,
+    {{ item.nickName }}
+</p>
+    {% endfor %}
+{% endblock %}

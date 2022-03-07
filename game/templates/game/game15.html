@@ -1,0 +1,19 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 15
+</h1>
+
+    {% for item in items %}
+<p>
+    One day I got up and saw that my mom had made some {{ item.food }}. I was so excited, mom puts her special
+    ingredient, {{ item.ingredient }} in it to make it extra delicious! I knew that we'd be {{ item.adjective }} to
+    get to the park to see {{ item.person }}. Mom and I love to see them because they're {{ item.adjectiveTwo }}.
+    After the park we knew we'd have to run to the {{ item.place }} and grab some {{ item.noun }}. We'd need something
+    to cook for dinner! Mom was so surprised when she opened her gift! I got here a {{ item.nounTwo }}. This was the
+    best Mother's Day ever!
+</p>
+    {% endfor %}
+{% endblock %}

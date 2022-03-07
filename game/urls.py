@@ -1,0 +1,37 @@
+from . import views
+from django.urls import path
+
+app_name = 'game'
+urlpatterns = [
+    path('', views.index, name="index"),
+    path('add', views.create_item, name='create_item'),
+    path('gameone', views.game_one_page, name="gameone"),
+    path('addTwo', views.create_item_two, name='create_item_two'),
+    path('gametwo', views.game_two_page, name="gametwo"),
+    path('addThree', views.create_item_three, name='create_item_three'),
+    path('gamethree', views.game_three_page, name="gamethree"),
+    path('addFour', views.create_item_four, name='create_item_four'),
+    path('gamefour', views.game_four_page, name="gamefour"),
+    path('addFive', views.create_item_five, name='create_item_five'),
+    path('gamefive', views.game_five_page, name="gamefive"),
+    path('addSix', views.create_item_six, name='create_item_six'),
+    path('gameSix', views.game_six_page, name="gamesix"),
+    path('addSeven', views.create_item_seven, name='create_item_seven'),
+    path('gameSeven', views.game_seven_page, name="gameseven"),
+    path('addEight', views.create_item_eight, name='create_item_eight'),
+    path('gameEight', views.game_eight_page, name="gameeight"),
+    path('addNine', views.create_item_nine, name='create_item_nine'),
+    path('gameNine', views.game_nine_page, name="gamenine"),
+    path('addTen', views.create_item_ten, name='create_item_ten'),
+    path('gameTen', views.game_ten_page, name="gameten"),
+    path('addEleven', views.create_item_eleven, name='create_item_eleven'),
+    path('gameEleven', views.game_eleven_page, name="gameeleven"),
+    path('addTwelve', views.create_item_twelve, name='create_item_twelve'),
+    path('gameTwelve', views.game_twelve_page, name="gametwelve"),
+    path('addThirteen', views.create_item_thirteen, name='create_item_thirteen'),
+    path('gameThirteen', views.game_thirteen_page, name="gamethirteen"),
+    path('addFourteen', views.create_item_fourteen, name='create_item_fourteen'),
+    path('gameFourteen', views.game_fourteen_page, name="gamefourteen"),
+    path('addFifteen', views.create_item_fifteen, name='create_item_fifteen'),
+    path('gameFifteen', views.game_fifteen_page, name="gamefifteen"),
+]

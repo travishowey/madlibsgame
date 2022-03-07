@@ -1,0 +1,17 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 14
+</h1>
+
+    {% for item in items %}
+<p>
+    {{ item.name }} was a mighty {{ item.dinosaurType }}. He would stomp around the jungle with a loud {{ item.noise }}!
+    The other dinosaurs thought he was good at hunting {{ item.animal }} and had a very scary {{ item.bodyPart }}. He
+    lived in a {{ item.color }} cave that smelled like {{ item.smell }}. He had {{ item.number }} friends that always
+    played {{ item.game }} with him. He was a very {{ item.emotion }} dinosaur.
+</p>
+    {% endfor %}
+{% endblock %}

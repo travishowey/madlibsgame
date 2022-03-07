@@ -1,0 +1,16 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 3
+</h1>
+
+    {% for item in items %}
+<p>
+    {{ item.personOne }} and {{ item.personTwo }} are going to make a sandwich. First they take two slices of {{ item.bread }}
+    Then they spread some {{ item.noun }}. Then they add some {{ item.nounTwo }} and {{ item.nounThree }}. Their sandwiches
+    are {{ item.adjective }}
+</p>
+    {% endfor %}
+{% endblock %}

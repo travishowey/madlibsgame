@@ -1,0 +1,15 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 10
+</h1>
+
+    {% for item in items %}
+<p>
+    One day {{ item.properNoun }} was {{ item.verbWithIng }} to the {{ item.noun }}. On the way, {{ item.pronoun }} saw
+    a {{ item.nounTwo }}. This was a surprise so {{ item.pronoun }} {{ item.verb }} quickly.
+</p>
+    {% endfor %}
+{% endblock %}

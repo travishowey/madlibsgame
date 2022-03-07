@@ -1,0 +1,17 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 13
+</h1>
+
+    {% for item in items %}
+<p>
+    Make sure your lunch {{ item.container }} is filled with nutritious {{ item.adjective }} food. Do not go to the
+    {{ item.adjectiveTwo }} food stand across the street from the school. The hamburgers they serve are fried in
+    {{ item.noun }} and are made of {{ item.animal }} meat. So take a sandwich made of {{ item.vegetable }}, or
+    {{ item.vegetableTwo }} it's much healthier! Drink {{ item.color }} milk instead of {{ item.adjectiveThree }} colas.
+</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 8
+</h1>
+
+    {% for item in items %}
+<p>
+    I can't believe it's already {{ item.holiday }}! I can't wait to put on my {{ item.noun }} and visit every
+    {{ item.place }} in my neighborhood. This year, I am going to dress up as a {{ item.costume }} with
+    {{ item.adjective }} {{ item.bodyPartPlural }}. Before I {{ item.verb }}, I make sure to grab my
+    {{ item.adjectiveTwo }} {{ item.nounTwo }} to hold all of my {{ item.food }}. Finally, all of my
+    {{ item.pluralNoun }} are ready to go!
+</p>
+    {% endfor %}
+{% endblock %}

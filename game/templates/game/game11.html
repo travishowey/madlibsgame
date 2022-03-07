@@ -1,0 +1,18 @@
+{% extends 'game/base.html' %}
+
+{% block body %}
+
+<h1>
+    Game 11
+</h1>
+
+    {% for item in items %}
+<p>
+    Winter is here! I love winter because I always get to go {{ item.verbWithIng }} with {{ item.person }}. Another
+    fun winter activity is {{ item.verbWithIngTwo }}. In December the weather is {{ item.adjective }}. When it is
+    {{ item.adjectiveTwo }} outside, {{ item.personTwo }} and I {{ item.verb }}. My favorite food to eat when it is
+    cold is {{ item.adjectiveThree }} {{ item.food }}. Playing in the snow is best when I'm wearing
+    {{  item.clothing }}. I hope you have a {{ item.adjectiveFour }} Christmas and a {{ item.adjectiveFive }} New Year!
+</p>
+    {% endfor %}
+{% endblock %}
