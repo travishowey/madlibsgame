@@ -10,23 +10,129 @@
 </head>
 <body>
 {% block body %}
-<h1>Welcome to Travlibs. Would you like to play a game?</h1>
 
-    <a href="{% url 'game:create_item' %}" class="nav-item nav-link">Game One</a>
-    <a href="{% url 'game:create_item_two' %}" class="nav-item nav-link">Game Two</a>
-    <a href="{% url 'game:create_item_three' %}" class="nav-item nav-link">Game Three</a>
-    <a href="{% url 'game:create_item_four' %}" class="nav-item nav-link">Game Four</a>
-    <a href="{% url 'game:create_item_five' %}" class="nav-item nav-link">Game Five</a>
-    <a href="{% url 'game:create_item_six' %}" class="nav-item nav-link">Game Six</a>
-    <a href="{% url 'game:create_item_seven' %}" class="nav-item nav-link">Game Seven</a>
-    <a href="{% url 'game:create_item_eight' %}" class="nav-item nav-link">Game Eight</a>
-    <a href="{% url 'game:create_item_nine' %}" class="nav-item nav-link">Game Nine</a>
-    <a href="{% url 'game:create_item_ten' %}" class="nav-item nav-link">Game Ten</a>
-    <a href="{% url 'game:create_item_eleven' %}" class="nav-item nav-link">Game Eleven</a>
-    <a href="{% url 'game:create_item_twelve' %}" class="nav-item nav-link">Game Twelve</a>
-    <a href="{% url 'game:create_item_thirteen' %}" class="nav-item nav-link">Game Thirteen</a>
-    <a href="{% url 'game:create_item_fourteen' %}" class="nav-item nav-link">Game Fourteen</a>
-    <a href="{% url 'game:create_item_fifteen' %}" class="nav-item nav-link">Game Fifteen</a>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Welcome to TravLibs</h1>
+    <p class="lead">Would you like to play a game?</p>
+  </div>
+</div>
+
+
+
+<div class="row text-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game One</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the first game</h6>
+    <a href="{% url 'game:create_item' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Two</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the second game</h6>
+    <a href="{% url 'game:create_item_two' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Three</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the third game</h6>
+    <a href="{% url 'game:create_item_three' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Four</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the fourth game</h6>
+    <a href="{% url 'game:create_item_four' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Five</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the fifth game</h6>
+    <a href="{% url 'game:create_item_five' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+</div>
+<div class="row text-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Six</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the sixth game</h6>
+    <a href="{% url 'game:create_item_six' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Seven</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the seventh game</h6>
+    <a href="{% url 'game:create_item_seven' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Eight</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the eighth game</h6>
+    <a href="{% url 'game:create_item_eight' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Nine</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the ninth game</h6>
+    <a href="{% url 'game:create_item_nine' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Ten</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the ten game</h6>
+    <a href="{% url 'game:create_item_ten' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+</div>
+<div class="row text-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Eleven</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the eleventh game</h6>
+    <a href="{% url 'game:create_item_eleven' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Twelve</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the twelvth game</h6>
+    <a href="{% url 'game:create_item_twelve' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Thirteen</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the Thirteenth game</h6>
+    <a href="{% url 'game:create_item_thirteen' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Fourteen</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the fourteenth game</h6>
+    <a href="{% url 'game:create_item_fourteen' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Game Fifteen</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This is the fifteenth game</h6>
+    <a href="{% url 'game:create_item_fifteen' %}" class="btn btn-primary">Go there</a>
+  </div>
+</div>
+</div>
+
+
 {% endblock %}
 </body>
 </html>
