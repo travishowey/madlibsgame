@@ -104,3 +104,4 @@ class GameFifteenForm(forms.ModelForm):
     class Meta:
         model = GameFifteen
         fields = ['food', 'ingredient', 'adjective', 'person', 'adjectiveTwo', 'place', 'noun', 'nounTwo']
+

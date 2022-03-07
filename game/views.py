@@ -302,3 +302,6 @@ def game_fifteen_page(request):
     print (item)
     return render(request, 'game/game15.html', context)
 
+
+def all_stories(request):
+    return render(request, 'game/all-stories.html')

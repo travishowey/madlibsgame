@@ -34,4 +34,5 @@ urlpatterns = [
     path('gameFourteen', views.game_fourteen_page, name="gamefourteen"),
     path('addFifteen', views.create_item_fifteen, name='create_item_fifteen'),
     path('gameFifteen', views.game_fifteen_page, name="gamefifteen"),
+    path('allStories', views.all_stories, name='all_stories'),
 ]

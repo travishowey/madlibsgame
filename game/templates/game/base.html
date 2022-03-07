@@ -16,9 +16,9 @@
 
 
     <ul class="nav nav-pills">
-
+    <a href="{% url 'game:all_stories' %}" class="nav-item nav-link text-white">All Stories</a>
     <li class="nav-item dropdown ms-auto">
-        ><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">View All Games</a>
+        <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Quick Play</a>
         <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" href="{% url 'game:create_item' %}">Game One</a>
     <a class="dropdown-item" href="{% url 'game:create_item_two' %}">Game Two</a>
