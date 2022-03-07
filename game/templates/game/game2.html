@@ -2,6 +2,7 @@
 
 {% block body %}
 
+    <div class="container">
 <h1>
     Game 2
 </h1>
@@ -11,5 +12,6 @@
     {{ item.personOne }} went to the beach with {{ item.personTwo }}. First they {{ item.verb }} in their {{ item.noun }}.
     Then, they saw {{ item.nounTwo }} and {{ item.nounThree }}. Lastly, they built a sandcastle out of {{ item.nounFour }}
 </p>
+</div>
     {% endfor %}
 {% endblock %}
